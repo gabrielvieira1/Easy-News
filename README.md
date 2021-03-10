@@ -1,0 +1,2 @@
+# Easy-News
+Projeto ADS
