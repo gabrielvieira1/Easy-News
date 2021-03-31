@@ -1,0 +1,37 @@
+#background{
+    width: 100vw;
+    height: 100vh;
+}
+
+#background h1{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    max-height: 670px;
+    font-family: Anastasya Confession;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11vw;
+    line-height: 30vh;
+    margin-left: 10vw;
+    color: #020F83;
+    justify-content: center;
+    align-items: center;
+
+    text-shadow: 8px 4px 10px rgba(0, 0, 0, 0.3);
+}
+#background p{
+   
+    position: absolute;
+    width: 25vw;
+    height: 5vh;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 4vh;
+    line-height: 5vh;
+    color: #020F83;
+    margin-left: 10vw;
+   
+}
