@@ -1,4 +1,4 @@
-package br.com.easynews.config;
+package com.ads.easynews.config;
 
 import java.util.Arrays;
 
