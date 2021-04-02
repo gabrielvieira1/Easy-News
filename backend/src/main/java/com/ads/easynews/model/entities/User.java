@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
@@ -45,5 +47,8 @@ public class User {
 	@Size(max = 50)
 	@Getter @Setter private String password;
 	
+	@ManyToOne
+	@JoinColumn(name = "Adress_id")
+	@Getter @Setter private Address address;
 
 }
