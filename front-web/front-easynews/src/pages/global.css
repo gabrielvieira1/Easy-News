@@ -5,10 +5,8 @@
 }
 
 body{
-    position: relative;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(180deg, #818DFF 0%, rgba(211, 239, 249, 0) 100%);
 }
 
 
