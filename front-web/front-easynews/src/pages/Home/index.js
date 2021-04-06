@@ -1,32 +1,29 @@
-import React from 'react';
-import './styles.css';
-import '../../pages/global.css';
-import image from '../../assets/Images/background.png';
+import React from "react";
+//import "./styles.css";
+//import "../../pages/global.css";
+import image from "../../assets/Images/background.png";
+import {
+  Container,
+  ContainerImage,
+  LinkSobre,
+  ButtonMapa,
+  ButtonEntrar,
+} from "./styles";
 
-function Home(){
-    return(
-        <div id="home">
-            <main>
-                <div className="Nuvem-imagem">
-                    <img src={image} alt="nuvem"/> 
-                </div>
-                
-            </main>
-            <div className="Buttons">
-                <button className="Mapa">
-                    Mapa
-                </button>
-            </div>
-            <div className="Buttons_2">
-                <button className="Entrar">
-                    Entrar
-                </button>
-            </div>
-            <a href="" className="Sobre">
-                <h5>Sobre</h5>
-            </a>
-        </div>
-
-    );
+function Home() {
+  return (
+    <Container>
+      <main>
+        <ContainerImage>
+          <img src={image} alt="nuvem" />
+        </ContainerImage>
+      </main>
+      <ButtonMapa>Mapa</ButtonMapa>
+      <ButtonEntrar>Entrar</ButtonEntrar>
+      <LinkSobre href="">
+        <h5>Sobre</h5>
+      </LinkSobre>
+    </Container>
+  );
 }
 export default Home;
