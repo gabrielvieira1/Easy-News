@@ -1,14 +1,14 @@
 import React from 'react';
 import Routes from './routes';
 import GlobalStyles from './styles/global';
-
+import styles from './pages/Home/styles';
 
  function App() {
   return (
-    <div className="App">
+    <>
       <Routes />
       <GlobalStyles />
-    </div>
+    </>
   );
 }
 export default App;

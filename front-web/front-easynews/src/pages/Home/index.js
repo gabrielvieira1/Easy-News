@@ -1,28 +1,51 @@
 import React from "react";
+import { Link } from "react-router-dom";
 //import "./styles.css";
 //import "../../pages/global.css";
-import image from "../../assets/Images/background.png";
+import logo from "../../assets/Images/Logo.svg";
+import globo from "../../assets/Images/globo.svg";
+import globo2 from "../../assets/Images/globo2.svg";
+
 import {
   Container,
-  ContainerImage,
+  Image,
   LinkSobre,
-  ButtonMapa,
-  ButtonEntrar,
+  LinkMapa,
+  LinkEntrar,
+  Header,
+  Main,
+  Left,
+  Right,
+  Slogan,
 } from "./styles";
 
 function Home() {
   return (
     <Container>
-      <main>
-        <ContainerImage>
-          <img src={image} alt="nuvem" />
-        </ContainerImage>
-      </main>
-      <ButtonMapa>Mapa</ButtonMapa>
-      <ButtonEntrar>Entrar</ButtonEntrar>
-      <LinkSobre href="">
-        <h5>Sobre</h5>
-      </LinkSobre>
+
+      <Header>
+        <LinkSobre href="">
+          Sobre
+        </LinkSobre>
+        <LinkEntrar href="/">Entrar</LinkEntrar>
+      </Header>
+
+      <Main>
+
+        <Left>
+          <Image src={logo} alt="globo" width="578"/>
+          <Slogan>Tornando seu caminho melhor
+          com informações do dia-a dia</Slogan>
+          <Image src={globo2} alt="globo" width="739"/>
+        </Left>
+
+        <Right>
+          <Image src={globo} alt="globo" style={{marginRight:38}} width="710"/>
+          <LinkMapa href="/">Mapa</LinkMapa>
+        </Right>
+
+      </Main>
+
     </Container>
   );
 }

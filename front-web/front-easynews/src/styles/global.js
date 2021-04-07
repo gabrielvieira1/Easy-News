@@ -9,7 +9,12 @@ export default createGlobalStyle`
 }
 
 body{
-  width: 100vw;
-  height: 100vh;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+html,body,#root{
+  height: 100%;
 }
 `;
