@@ -27,7 +27,7 @@ function Home() {
         <LinkSobre href="">
           Sobre
         </LinkSobre>
-        <LinkEntrar href="/">Entrar</LinkEntrar>
+        <LinkEntrar href="/Cadastro">Entrar</LinkEntrar>
       </Header>
 
       <Main>

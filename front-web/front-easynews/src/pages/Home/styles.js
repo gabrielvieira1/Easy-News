@@ -7,8 +7,6 @@ export const Container = styled.div`
 
 export const Main = styled.main`
   display: grid;
-  /* grid-template-areas: 
-  'left right'; */
   grid-template-columns: 50% 50%;
 `
 
@@ -17,14 +15,12 @@ export const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* grid-area: left; */
 `
 
 export const Right = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* grid-area: right; */
 `
 export const Slogan = styled.h1`
   text-align: center;
@@ -35,7 +31,6 @@ export const Slogan = styled.h1`
 `
 
 export const Image = styled.img`
-  
 `;
 
 export const Header = styled.header`
