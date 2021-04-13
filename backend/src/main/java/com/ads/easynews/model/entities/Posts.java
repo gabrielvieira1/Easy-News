@@ -28,30 +28,92 @@ public class Posts {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Getter private Long id;
+	private Long id;
 	
 	@Column(name = "Title")
-	@Getter @Setter private String title;
+	private String title;
 	
 	@Column(name = "Description")
-	@Getter @Setter private String description;
+	private String description;
 	
 	@Column(name = "Date")
 	@Temporal(TemporalType.DATE)
-	@Getter @Setter private Date date;
+	private Date date;
 	
 	@Column(name = "Active")
-	@Getter @Setter private boolean active;
+	private boolean active;
 	
 	@Column(name = "Tags")
-	@Getter @Setter private String tags;
+	private String tags;
 	
 	@OneToOne
 	@JoinColumn(name = "Address_id")
-	@Getter @Setter private Address address;
+	private Address address;
 	
 	@OneToOne
 	@JoinColumn(name = "TipoPosts_id")
-	@Getter @Setter private TipoPosts tipoPosts;
+	private TipoPosts tipoPosts;
+
+	public Long getId() {
+		return id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
+	}
+
+	public String getTags() {
+		return tags;
+	}
+
+	public void setTags(String tags) {
+		this.tags = tags;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public TipoPosts getTipoPosts() {
+		return tipoPosts;
+	}
+
+	public void setTipoPosts(TipoPosts tipoPosts) {
+		this.tipoPosts = tipoPosts;
+	}
+	
+	
 
 }
