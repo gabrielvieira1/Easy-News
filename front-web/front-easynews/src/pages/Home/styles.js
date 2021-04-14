@@ -76,3 +76,4 @@ export const LinkSobre = styled.a`
     color: #5B63AF !important;
   }
 `;
+
