@@ -12,15 +12,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 @Entity
 @Table(name = "Address")
-@NoArgsConstructor
-@AllArgsConstructor
 public class Address {
 	
 	@Id
@@ -53,6 +46,19 @@ public class Address {
 	
 	@OneToMany(targetEntity = Posts.class)
 	private List<Posts> posts = new ArrayList<Posts>();
+	
+	public Address() {
+		
+	}
+	
+	public Address(String country, String state, String city, String street, Double latitude, Double longitude) {
+		this.country = country;
+		this.state = state;
+		this.city = city;
+		this.street = street;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
 
 	public String getCountry() {
 		return country;

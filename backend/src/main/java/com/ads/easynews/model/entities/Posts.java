@@ -22,8 +22,6 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "Posts")
-@NoArgsConstructor
-@AllArgsConstructor
 public class Posts {
 	
 	@Id
@@ -53,6 +51,21 @@ public class Posts {
 	@OneToOne
 	@JoinColumn(name = "TipoPosts_id")
 	private TipoPosts tipoPosts;
+
+	public Posts() {
+		
+	}
+
+	public Posts(String title, String description, Date date, boolean active, String tags, Address address, TipoPosts tipoPosts) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.date = date;
+		this.active = active;
+		this.tags = tags;
+		this.address = address;
+		this.tipoPosts = tipoPosts;
+	}
 
 	public Long getId() {
 		return id;
