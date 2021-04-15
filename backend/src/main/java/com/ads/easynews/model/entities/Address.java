@@ -12,46 +12,112 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
 @Entity
 @Table(name = "Address")
-@NoArgsConstructor
-@AllArgsConstructor
 public class Address {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Getter private Long id;
+	private Long id;
 	
 	@Column(name = "Country")
 	@Size(max = 50)
-	@Getter @Setter private String country;
+	private String country;
 	
 	@Column(name = "State")
 	@Size(max = 50)
-	@Getter @Setter private String state;
+	private String state;
 	
 	@Column(name = "City")
 	@Size(max = 50)
-	@Getter @Setter private String city;
+	private String city;
 	
 	@Column(name = "Street")
 	@Size(max = 50)
-	@Getter @Setter private String street;
+	private String street;
 	
 	@Column(name = "Latitude")
 	@Size(max = 50)
-	@Getter @Setter private Double latitude;
+	private Double latitude;
 	
 	@Column(name = "Longitude")
 	@Size(max = 50)
-	@Getter @Setter private Double longitude;
+	private Double longitude;
 	
 	@OneToMany(targetEntity = Posts.class)
-	@Getter @Setter private List<Posts> posts = new ArrayList<Posts>();
+	private List<Posts> posts = new ArrayList<Posts>();
+	
+	public Address() {
+		
+	}
+	
+	public Address(String country, String state, String city, String street, Double latitude, Double longitude) {
+		this.country = country;
+		this.state = state;
+		this.city = city;
+		this.street = street;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getStreet() {
+		return street;
+	}
+
+	public void setStreet(String street) {
+		this.street = street;
+	}
+
+	public Double getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(Double latitude) {
+		this.latitude = latitude;
+	}
+
+	public Double getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(Double longitude) {
+		this.longitude = longitude;
+	}
+
+	public List<Posts> getPosts() {
+		return posts;
+	}
+
+	public void setPosts(List<Posts> posts) {
+		this.posts = posts;
+	}
+
+	public Long getId() {
+		return id;
+	}
 
 }
