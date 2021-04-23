@@ -1,8 +1,8 @@
 import React from "react";
 import { colors } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import logoAmarelo from "../../assets/Images/LogoAmarelo.svg";
-import mapWoman from "../../assets/Images/mapWoman.svg";
+import LogoBlue from "../../assets/Images/LogoBlue.svg";
+import phoneGuy from "../../assets/Images/phoneGuy.svg";
 import linkedin from "../../assets/Images/linkedin.svg";
 import github from "../../assets/Images/github.svg";
 import TextField from "@material-ui/core/TextField";
@@ -35,9 +35,8 @@ function Cadastro() {
     <Container>
       <Main>
         <Left>
-          <Image src={logoAmarelo} alt="logo" width="353" />
-          <Slogan>Você está a um passo de definir o seu destino.</Slogan>
-          <Image src={mapWoman} alt="mulher usando mapa" width="650" />
+          <Image src={LogoBlue} alt="logo" width="653" />
+          <Image src={phoneGuy} alt="mulher usando mapa" width="650" />
         </Left>
 
         <Right>
@@ -47,38 +46,19 @@ function Cadastro() {
               <Image src={linkedin} alt="logo" width="40" />
             </Icons>
             <Header>
-              <P>Já possui conta?</P>
-              <LinkEntrar href="/TelaLogin">ENTRE</LinkEntrar>
+              <P>Não possui conta?</P>
+              <LinkEntrar href="/">CADASTRE-SE</LinkEntrar>
             </Header>
-            <H1>Inscreva-se no Easy N3ws </H1>
-            <LinkGoogle href="/">Cadastre-se com o Google</LinkGoogle>
+            <H1>Login em Easy N3ws </H1>
+            <LinkGoogle href="/">Entrar com o Google</LinkGoogle>
           </Top>
           <Form>
-            <Fieldset>
-              <div>
-                <Label> Nome </Label>
-                <Input
-                  type="text"
-                  name="nome"
-                  placeholder="Digite seu nome aqui"
-                />
-              </div>
-              <div>
-                <Label> Nome e usuário </Label>
-                <Input
-                  type="text"
-                  name="usuario"
-                  placeholder="Digite sua nome de usuario"
-                />
-              </div>
-            </Fieldset>
-
             <FieldsetEmail>
-              <Label> E-mail </Label>
+              <Label> Usuário ou endereço de E-mail </Label>
               <Input
                 type="e-mail"
                 name="email"
-                placeholder="Digite seu e-mail"
+                placeholder="Digite seu e-mail ou usuário"
               />
               <Label> Senha </Label>
               <Input
@@ -87,7 +67,7 @@ function Cadastro() {
                 placeholder="Digite sua senha"
               />
             </FieldsetEmail>
-            <LinkCadastro href="/">Cadastrar</LinkCadastro>
+            <LinkCadastro href="/">Entrar</LinkCadastro>
           </Form>
         </Right>
       </Main>
