@@ -1,26 +1,35 @@
 import React from "react";
+import { colors } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import logoAmarelo from "../../assets/Images/LogoAmarelo.svg";
 import mapWoman from "../../assets/Images/mapWoman.svg";
+import linkedin from "../../assets/Images/linkedin.svg";
+import github from "../../assets/Images/github.svg";
 import TextField from "@material-ui/core/TextField";
 import { api } from '../../services/api';
 import { cadastrarUsuario } from '../../services/cadastroUsuarioService'
 
 import {
-  Container,
-  Image,
-  Main,
-  Left,
-  Right,
-  Slogan,
-  LinkGoogle,
-  LinkCadastro,
-  Form,
-  Input,
-  Fieldset,
   FieldsetEmail,
+  LinkCadastro,
+  LinkGoogle,
+  LinkEntrar,
+  ImageGit,
+  Container,
+  Fieldset,
+  Slogan,
+  Header,
+  Right,
+  Image,
+  Input,
   Label,
+  Main,
+  Icons,
+  Form,
+  Left,
   Top,
+  H1,
+  P,
 } from "./styles";
 
 export default class Cadastro extends React.Component{
@@ -61,6 +70,14 @@ export default class Cadastro extends React.Component{
   
           <Right>
             <Top>
+            <Icons>
+              <Image src={github} alt="logo" width="40" />
+              <Image src={linkedin} alt="logo" width="40" />
+            </Icons>
+            <Header>
+              <P>Já possui conta?</P>
+              <LinkEntrar href="/TelaLogin">ENTRE</LinkEntrar>
+            </Header>
               <h1>Inscreva-se no Easy N3ws </h1>
               <LinkGoogle href="/">Cadastre-se com o Google</LinkGoogle>
             </Top>

@@ -10,7 +10,7 @@ export const Main = styled.main`
 `;
 
 export const Left = styled.div`
-  background: linear-gradient(180deg, #fffe84 52.6%, #ffffff 100%);
+  background: linear-gradient(180deg, #add8e6 57.29%, #ffffff 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@ export const Slogan = styled.h1`
   line-height: 57px;
   width: 614px;
   height: 112px;
-  color: #c27803;
+  color: #00a4db;
   text-align: left;
 `;
 
@@ -73,7 +73,7 @@ export const LinkSobre = styled.a`
 `;
 
 export const LinkCadastro = styled.a`
-  margin-top: 80px;
+  margin-top: 46px;
   width: 326px;
   height: 66px;
   text-decoration: none;
@@ -90,6 +90,7 @@ export const LinkCadastro = styled.a`
   align-items: center;
   text-align: center;
   color: #ffffff;
+  padding-left: 112px;
   &:hover {
     transition: 0.5ss;
     background-color: #700a22 !important;
@@ -97,7 +98,7 @@ export const LinkCadastro = styled.a`
 `;
 
 export const LinkGoogle = styled.a`
-  width: 445px;
+  width: 397px;
   height: 45px;
   margin-top: 20px;
   text-decoration: none;
@@ -111,7 +112,7 @@ export const LinkGoogle = styled.a`
   display: flex;
   align-items: center;
   text-align: center;
-  padding-left: 67px;
+  padding-left: 80px;
   &:hover {
     transition: 0.6ss;
     background-color: #1c1c1c !important;
@@ -178,6 +179,7 @@ export const Icons = styled.div`
 `;
 
 export const H1 = styled.h1`
+  margin-top: 50px;
   font-family: SF UI Display;
   font-style: normal;
   font-weight: bold;
