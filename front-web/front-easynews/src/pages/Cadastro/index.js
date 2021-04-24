@@ -6,8 +6,9 @@ import mapWoman from "../../assets/Images/mapWoman.svg";
 import linkedin from "../../assets/Images/linkedin.svg";
 import github from "../../assets/Images/github.svg";
 import TextField from "@material-ui/core/TextField";
-import { api } from '../../services/api';
-import { cadastrarUsuario } from '../../services/cadastroUsuarioService'
+import { api } from "../../services/api";
+import { cadastrarUsuario } from "../../services/cadastroUsuarioService";
+import NomeField from "../../Components/Forms/NomeField";
 
 import {
   FieldsetEmail,
@@ -32,16 +33,15 @@ import {
   P,
 } from "./styles";
 
-export default class Cadastro extends React.Component{
-
-  constructor(props){
+export default class Cadastro extends React.Component {
+  constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      userName: '',
-      email: '',
-      password: ''
-    }
+      name: "",
+      userName: "",
+      email: "",
+      password: "",
+    };
 
     this.changeHandler = this.changeHandler.bind(this);
     this.submitHandler = this.submitHandler.bind(this);
@@ -50,15 +50,13 @@ export default class Cadastro extends React.Component{
   submitHandler = (event) => {
     event.preventDefault();
     cadastrarUsuario(this.state);
-  }
+  };
 
   changeHandler = (event) => {
-    this.setState(
-      {[event.target.name]: event.target.value}
-    );
-  }
+    this.setState({ [event.target.name]: event.target.value });
+  };
 
-  render(){
+  render() {
     return (
       <Container>
         <Main>
@@ -67,17 +65,17 @@ export default class Cadastro extends React.Component{
             <Slogan>Você está a um passo de definir o seu destino.</Slogan>
             <Image src={mapWoman} alt="mulher usando mapa" width="650" />
           </Left>
-  
+
           <Right>
             <Top>
-            <Icons>
-              <Image src={github} alt="logo" width="40" />
-              <Image src={linkedin} alt="logo" width="40" />
-            </Icons>
-            <Header>
-              <P>Já possui conta?</P>
-              <LinkEntrar href="/TelaLogin">ENTRE</LinkEntrar>
-            </Header>
+              <Icons>
+                <Image src={github} alt="logo" width="40" />
+                <Image src={linkedin} alt="logo" width="40" />
+              </Icons>
+              <Header>
+                <P>Já possui conta?</P>
+                <LinkEntrar href="/TelaLogin">ENTRE</LinkEntrar>
+              </Header>
               <h1>Inscreva-se no Easy N3ws </h1>
               <LinkGoogle href="/">Cadastre-se com o Google</LinkGoogle>
             </Top>
@@ -102,7 +100,7 @@ export default class Cadastro extends React.Component{
                   />
                 </div>
               </Fieldset>
-  
+
               <FieldsetEmail>
                 <Label> E-mail </Label>
                 <Input
@@ -119,7 +117,10 @@ export default class Cadastro extends React.Component{
                   onBlur={this.changeHandler}
                 />
               </FieldsetEmail>
-              <LinkCadastro onClick= {this.submitHandler} >Cadastrar</LinkCadastro>
+              <LinkCadastro onClick={this.submitHandler}>
+                Cadastrar
+              </LinkCadastro>
+              <NomeField className="btn btnazul" />
             </Form>
           </Right>
         </Main>
