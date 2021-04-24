@@ -1,4 +1,6 @@
 import React from "react";
+import LogoNoticias from "../../assets/Images/LogoNoticias.svg";
+import from "../";s
 
 export default class HeaderComponent extends React.Component {
   constructor(props) {
@@ -7,7 +9,9 @@ export default class HeaderComponent extends React.Component {
   render() {
     return (
       <div>
-        <Header></Header>
+        <Header>
+          <Image src={LogoNoticias} alt="logo" width="353" />
+        </Header>
       </div>
     );
   }
