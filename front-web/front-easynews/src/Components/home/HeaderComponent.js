@@ -1,6 +1,15 @@
 import React from "react";
 import LogoNoticias from "../../assets/Images/LogoNoticias.svg";
-import {Header} from "./HeaderStyle";
+import UserLogo from "../../assets/Images/UserLogo.svg";
+import {
+  Header,
+  Image,
+  MapButton,
+  AddNews,
+  Main,
+  UserIcon,
+  UserGreeting,
+} from "./HeaderStyle";
 
 export default class HeaderComponent extends React.Component {
   constructor(props) {
@@ -8,11 +17,19 @@ export default class HeaderComponent extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Header>
-        {/* <Image src={LogoNoticias} alt="logo" width="353" />*/}
-        </Header>
-      </div>
+      <Header>
+        <Main>
+          <div style={{display: "flex",  alignItems: "center"}}>
+            <Image src={LogoNoticias} alt="logo" width="150" />
+            <MapButton>Mapa</MapButton>
+            <AddNews>Adicionar notícias</AddNews>
+          </div>
+          <div style={{display: "flex", alignItems: "center"}}>
+            <UserIcon src={UserLogo} alt="logo" width="50" />
+            <UserGreeting>Seja Bem Vindo Will</UserGreeting>
+          </div>
+        </Main>
+      </Header>
     );
   }
 }
