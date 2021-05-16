@@ -1,6 +1,6 @@
 import React from "react";
-import LogoNoticias from "../../assets/Images/LogoNoticias.svg";
-import UserLogo from "../../assets/Images/UserLogo.svg";
+import LogoNoticias from "../assets/Images/LogoNoticias.png";
+import UserLogo from "../assets/Images/UserLogo.svg";
 import {
   Header,
   Image,

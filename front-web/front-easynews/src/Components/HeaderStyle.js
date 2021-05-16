@@ -15,9 +15,18 @@ export const Header = styled.header`
 
 export const Image = styled.img``;
 
-export const MapButton = styled.a``;
+export const MapButton = styled.a`
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0,4em;
+`;
 
 export const AddNews = styled.a`
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size:  0,4em;
   padding-left: 1em;
 `;
 
@@ -26,6 +35,10 @@ export const UserIcon = styled.img`
 `;
 
 export const UserGreeting = styled.a`
+  font-family: SF UI Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size:  0,4em;
   padding-left: 1em;
   display: flex;
 `;
