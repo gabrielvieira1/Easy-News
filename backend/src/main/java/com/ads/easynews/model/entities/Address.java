@@ -37,11 +37,9 @@ public class Address {
 	private String street;
 	
 	@Column(name = "Latitude")
-	@Size(max = 50)
 	private Double latitude;
 	
 	@Column(name = "Longitude")
-	@Size(max = 50)
 	private Double longitude;
 	
 	@OneToMany(targetEntity = Posts.class)

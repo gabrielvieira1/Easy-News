@@ -10,6 +10,8 @@ import com.ads.easynews.exception.EasyNewsMessages;
 import com.ads.easynews.model.entities.Posts;
 import com.ads.easynews.model.enums.TipoPosts;
 import com.ads.easynews.repository.IPostsRepository;
+import com.ads.easynews.repository.ITipoPostsRepository;
+import com.ads.easynews.service.ICadastroAddressService;
 import com.ads.easynews.service.ICadastroPostsService;
 import com.ads.easynews.utils.ValidarData;
 
@@ -18,11 +20,19 @@ public class CadastroPostsService implements ICadastroPostsService {
 	
 	@Autowired
 	private IPostsRepository _postsRepository;
+	
+	@Autowired
+	private ITipoPostsRepository _tipoPostsRepository;
+	
+	@Autowired
+	private ICadastroAddressService _cadastroAddressService;
+	
 	ValidarData validarDate = new ValidarData();
 
 	public Posts createNew(Posts posts) {
 		validarCampos(posts);
 		
+		cadastrarDependencias(posts);
 		return _postsRepository.save(posts);
 	}
 	
@@ -47,6 +57,11 @@ public class CadastroPostsService implements ICadastroPostsService {
 		if(posts.getAddress().getLatitude() == null || posts.getAddress().getLongitude() == null) {
 			throw new CamposCadastroVaziosException(String.format(EasyNewsMessages.MS004, "endereço"));
 		}
+	}
+	
+	private void cadastrarDependencias(Posts posts) {
+		_tipoPostsRepository.save(posts.getTipoPosts());
+		_cadastroAddressService.cadastrarEnderecoPosts(posts.getAddress());
 	}
 
 }
