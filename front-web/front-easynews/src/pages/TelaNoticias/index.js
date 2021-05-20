@@ -1,5 +1,5 @@
 import React from "react";
-import { Body, Card, Cards } from "./styles";
+import { Body, Card, Text, Badge, Badges } from "./styles";
 import LogoNoticias from "../../assets/Images/LogoNoticias.png";
 import UserLogo from "../../assets/Images/UserLogo.svg";
 import {
@@ -31,15 +31,56 @@ export default class TelaNoticias extends React.Component {
           </div>
         </Header>
         <Body>
-          <Card>Noticias</Card>
-          <Card>Noticias</Card>
-          <Card>Noticias</Card>
-          <Card>Noticias</Card>
-          <Card>Noticias</Card>
-          <Card>Noticias</Card>
-          <Card>Noticias</Card>
-          <Card>Noticias</Card>
-          <Card>Noticias</Card>
+          <Card>
+            <Text>
+              Em linguística, a noção de texto é ampla e ainda aberta a uma
+              definição mais precisa. Grosso modo, pode ser entendido como
+              manifestação linguística das ideias de um autor, que serão
+              interpretadas pelo leitor de acordo com seus conhecimentos
+              linguísticos e culturais. Seu tamanho é variável
+            </Text>
+            <Badges>
+            <Badge>
+              Protesto
+            </Badge>
+            <Badge>
+              Briga
+            </Badge>
+            <Badge>
+              Gritaria
+            </Badge>
+            <Badge>
+              Dedo no c#
+            </Badge>
+            </Badges>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
+          <Card>
+            <Text>Noticias</Text>
+          </Card>
         </Body>
       </>
     );
