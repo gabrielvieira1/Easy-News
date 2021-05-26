@@ -41,7 +41,7 @@ function Home() {
 
         <Right>
           <Image src={globo} alt="globo" style={{marginRight:38}} width="710"/>
-          <LinkMapa href="/">Mapa</LinkMapa>
+          <LinkMapa href="/telanoticias">Mapa</LinkMapa>
         </Right>
 
       </Main>

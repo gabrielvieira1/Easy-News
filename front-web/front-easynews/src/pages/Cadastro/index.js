@@ -8,7 +8,6 @@ import github from "../../assets/Images/github.svg";
 import TextField from "@material-ui/core/TextField";
 import { api } from "../../services/api";
 import { cadastrarUsuario } from "../../services/cadastroUsuarioService";
-import NomeField from "../../Components/Forms/NomeField";
 
 import {
   FieldsetEmail,
@@ -120,7 +119,6 @@ export default class Cadastro extends React.Component {
               <LinkCadastro onClick={this.submitHandler}>
                 Cadastrar
               </LinkCadastro>
-              <NomeField className="btn btnazul" />
             </Form>
           </Right>
         </Main>
