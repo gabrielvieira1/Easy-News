@@ -21,4 +21,8 @@ public class CadastroAddressService implements ICadastroAddressService{
 		_cadastroAddressRepository.save(address);
 	}
 	
+	public void updateAddressNews(Address address) {
+		//_cadastroAddressRepository.
+	}
+	
 }

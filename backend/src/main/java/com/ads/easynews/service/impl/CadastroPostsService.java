@@ -1,5 +1,8 @@
 package com.ads.easynews.service.impl;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -13,6 +16,7 @@ import com.ads.easynews.repository.IPostsRepository;
 import com.ads.easynews.repository.ITipoPostsRepository;
 import com.ads.easynews.service.ICadastroAddressService;
 import com.ads.easynews.service.ICadastroPostsService;
+import com.ads.easynews.service.ICadastroTipoPostsService;
 import com.ads.easynews.utils.ValidarData;
 
 @Service
@@ -27,6 +31,9 @@ public class CadastroPostsService implements ICadastroPostsService {
 	@Autowired
 	private ICadastroAddressService _cadastroAddressService;
 	
+	@Autowired
+	private ICadastroTipoPostsService _cadastroTipoPostsService;
+	
 	ValidarData validarDate = new ValidarData();
 
 	public Posts createNew(Posts posts) {
@@ -34,6 +41,21 @@ public class CadastroPostsService implements ICadastroPostsService {
 		
 		cadastrarDependencias(posts);
 		return _postsRepository.save(posts);
+	}
+	
+	public List<Posts> findNews(){
+		return _postsRepository.findAll();
+	}
+	
+	public Posts updateNew(long id, Posts news) {
+		validarCampos(news);
+		updateNewsDependencies(news);
+		
+		return null;
+	}
+	
+	public void deleteNewById(long id) {
+		_postsRepository.deleteById(id);
 	}
 	
 	private void validarCampos(Posts posts) {
@@ -62,6 +84,18 @@ public class CadastroPostsService implements ICadastroPostsService {
 	private void cadastrarDependencias(Posts posts) {
 		_tipoPostsRepository.save(posts.getTipoPosts());
 		_cadastroAddressService.cadastrarEnderecoPosts(posts.getAddress());
+	}
+	
+	private void updateNewsDependencies(Posts news) {
+		
+		if(news.getTipoPosts() != null) {
+			_cadastroTipoPostsService.updateTipoPosts(news.getTipoPosts());
+		}
+		
+		if(news.getAddress() != null) {
+						
+		}
+		
 	}
 
 }
