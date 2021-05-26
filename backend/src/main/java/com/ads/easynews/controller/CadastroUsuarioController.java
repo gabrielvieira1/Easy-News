@@ -17,8 +17,8 @@ public class CadastroUsuarioController {
 	
 	private ICadastroUsuarioService _cadastroUsuarioService;
 	
-	public CadastroUsuarioController(ICadastroUsuarioService _cadastroUsuarioService) {
-		this._cadastroUsuarioService = _cadastroUsuarioService;
+	public CadastroUsuarioController(ICadastroUsuarioService cadastroUsuarioService) {
+		this._cadastroUsuarioService = cadastroUsuarioService;
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
@@ -30,7 +30,9 @@ public class CadastroUsuarioController {
 		
 		UserDto userDto = _cadastroUsuarioService.cadastrarUsuario(user);
 				
-		return new ResponseEntity<>(userDto, HttpStatus.OK);
+		return new ResponseEntity<>(userDto, HttpStatus.CREATED);
 	}
+	
+	
 	
 }
