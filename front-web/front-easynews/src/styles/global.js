@@ -5,7 +5,7 @@ export default createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: SF UI Display;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -14,6 +14,6 @@ body{
 }
 
 html,body,#root{
-  height: 150vh;
+  height: 100vh;
 }
 `;

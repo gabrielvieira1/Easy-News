@@ -2,6 +2,7 @@ import React from "react";
 import { Body, Card, Text, Badge, Badges } from "./styles";
 import LogoNoticias from "../../assets/Images/LogoNoticias.png";
 import UserLogo from "../../assets/Images/UserLogo.svg";
+import Modal from "../../Modal/index.js";
 import {
   Header,
   Image,
@@ -14,7 +15,19 @@ import {
 export default class TelaNoticias extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = { show: false };
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal.bind(this);
   }
+
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
 
   render() {
     return (
@@ -23,7 +36,12 @@ export default class TelaNoticias extends React.Component {
           <div style={{ display: "flex", alignItems: "center" }}>
             <Image src={LogoNoticias} alt="logo" width="150" />
             <MapButton>Mapa</MapButton>
-            <AddNews>Adicionar notícias</AddNews>
+            <Modal show={this.state.show} handleClose={this.hideModal}>
+              <p>Modal</p>
+            </Modal>
+            <AddNews onClick={this.showModal}>
+              Adicionar notícias
+            </AddNews>
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
             <UserIcon src={UserLogo} alt="logo" width="50" />
@@ -35,23 +53,13 @@ export default class TelaNoticias extends React.Component {
             <Text>
               Em linguística, a noção de texto é ampla e ainda aberta a uma
               definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor, que serão
-              interpretadas pelo leitor de acordo com seus conhecimentos
-              linguísticos e culturais. Seu tamanho é variável
+              manifestação linguística das ideias de um autor
             </Text>
             <Badges>
-            <Badge>
-              Protesto
-            </Badge>
-            <Badge>
-              Briga
-            </Badge>
-            <Badge>
-              Gritaria
-            </Badge>
-            <Badge>
-              Dedo no c#
-            </Badge>
+              <Badge>Protesto</Badge>
+              <Badge>Briga</Badge>
+              <Badge>Gritaria</Badge>
+              <Badge>Dedo no c#</Badge>
             </Badges>
           </Card>
           <Card>
