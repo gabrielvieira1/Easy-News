@@ -7,13 +7,5 @@ import org.springframework.data.jpa.repository.Query;
 import com.ads.easynews.model.entities.Address;
 
 public interface ICadastroAddressRepository extends JpaRepository<Address, Long>{
-
-	@Modifying
-	@Query("UPDATE Address adrs"
-			+ ""
-			+ ""
-			+ ""
-			+ "")
-	void updateById(Address address);
 	
 }
