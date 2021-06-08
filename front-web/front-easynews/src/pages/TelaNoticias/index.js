@@ -36,12 +36,8 @@ export default class TelaNoticias extends React.Component {
           <div style={{ display: "flex", alignItems: "center" }}>
             <Image src={LogoNoticias} alt="logo" width="150" />
             <MapButton>Mapa</MapButton>
-            <Modal show={this.state.show} handleClose={this.hideModal}>
-              <p>Modal</p>
-            </Modal>
-            <AddNews onClick={this.showModal}>
-              Adicionar notícias
-            </AddNews>
+            <Modal show={this.state.show} handleClose={this.hideModal}></Modal>
+            <AddNews onClick={this.showModal}>Adicionar notícias</AddNews>
           </div>
           <div style={{ display: "flex", alignItems: "center" }}>
             <UserIcon src={UserLogo} alt="logo" width="50" />
