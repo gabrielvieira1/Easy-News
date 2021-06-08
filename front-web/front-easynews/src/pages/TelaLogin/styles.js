@@ -25,7 +25,7 @@ export const Right = styled.div`
 export const Slogan = styled.h1`
   padding-bottom: 40px;
   margin-left: 100px;
-  font-family: SF UI Display;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -82,7 +82,7 @@ export const LinkCadastro = styled.a`
   border: 3px solid #000000;
   box-sizing: border-box;
   border-radius: 20px;
-  font-family: SF UI Display;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -151,7 +151,7 @@ export const FieldsetEmail = styled.fieldset`
 `;
 
 export const Label = styled.label`
-  font-family: SF UI Display;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -166,7 +166,7 @@ export const Top = styled.div`
 `;
 
 export const P = styled.p`
-  font-family: SF UI Display;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: bold;
 `;
 
@@ -180,7 +180,7 @@ export const Icons = styled.div`
 
 export const H1 = styled.h1`
   margin-top: 50px;
-  font-family: SF UI Display;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;

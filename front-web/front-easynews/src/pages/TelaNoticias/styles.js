@@ -1,56 +1,43 @@
 import styled from "styled-components";
 
-export const Body = styled.body`
+export const Body = styled.div`
   justify-content: space-evenly;
   align-items: center;
   align-content: flex-start;
   flex-wrap: wrap;
   display: flex;
-  background-color: #d3d3d3;
+  background-color: white;
   padding-top: 6em;
   background-repeat: repeat-x;
 `;
 
 export const Card = styled.div`
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 50px;
   margin: 1em;
-  display: flex;
   height: 200px;
   width: 450px;
   max-width: 500px;
   border-radius: 2.5em;
-  background-color: white;
-  flex-grow: 1;
-  flex-shrink: 0;
+  background-color: #85c3ff;
+  padding: 20px;
 `;
 
 export const Text = styled.text`
-  justify-content: center;
-  margin: 16px 16px 0px 16px;
-  padding: 10px;
-  display: flex;
-  width: 450px;
-  height: 150px;
-  max-width: 500px;
-  border-radius: 2.5em;
-  flex-grow: 1;
-  flex-shrink: 0;
+  color: black;
+  font-weight: bold;  
 `;
 
-export const Badge = styled.div`
-  justify-content: center;
-  background-color: #d3d3d3;
-  display: flex;
-  flex-direction: column;
-  padding: 4px 8px;
+export const Badge = styled.a`
+  background-color: white;
+  padding: 4px;
   border-radius: 15px;
+  margin-right: 10px;
 `;
 
 export const Badges = styled.div`
-  justify-content: space-between;
-  margin: 0px 0px 26px 26px;
+  width: 100%;
+  margin: auto; 
+  justify-content: flex-start;
   display: flex;
-  width: 300px;
 `;
