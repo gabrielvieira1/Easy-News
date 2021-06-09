@@ -76,7 +76,7 @@ export default class Cadastro extends React.Component {
                 <LinkEntrar href="/TelaLogin">ENTRE</LinkEntrar>
               </Header>
               <h1>Inscreva-se no Easy N3ws </h1>
-              <LinkGoogle href="/">Cadastre-se com o Google</LinkGoogle>
+              <LinkGoogle href="/telanoticias">Cadastre-se com o Google</LinkGoogle>
             </Top>
             <Form>
               <Fieldset>
