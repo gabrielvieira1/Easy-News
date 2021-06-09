@@ -27,10 +27,11 @@ export const Section = styled.section`
   justify-content: space-between;
 `;
 
-export const Button = styled.a`
+export const ButtonProblem = styled.button`
   background-color: black;
   color: white;
   padding: 6px;
+  border-style: none;
   border-radius: 13px;
   width: 200px;
   margin-bottom: 15px;
@@ -38,6 +39,7 @@ export const Button = styled.a`
   font-size: 18px;
   display: flex;
   justify-content: center;
+  cursor:pointer;
 `;
 
 export const FieldLocation = styled.textarea`

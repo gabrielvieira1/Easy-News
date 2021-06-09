@@ -60,7 +60,7 @@ export default class Cadastro extends React.Component {
       <Container>
         <Main>
           <Left>
-            <Image src={logoAmarelo} alt="logo" width="353" />
+            <Image src={logoAmarelo} alt="logo" width="353"/>
             <Slogan>Você está a um passo de definir o seu destino.</Slogan>
             <Image src={mapWoman} alt="mulher usando mapa" width="650" />
           </Left>

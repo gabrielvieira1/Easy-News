@@ -19,17 +19,18 @@ export const Card = styled.div`
   width: 450px;
   max-width: 500px;
   border-radius: 2.5em;
-  background-color: #85c3ff;
+  background: linear-gradient(360deg, #818DFF 0%, rgba(211, 239, 249, 0) 100%);
   padding: 20px;
 `;
 
 export const Text = styled.text`
+margin-top: 10px;
   color: black;
   font-weight: bold;  
 `;
 
 export const Badge = styled.a`
-  background-color: white;
+  background-color: #e0e3ff;
   padding: 4px;
   border-radius: 15px;
   margin-right: 10px;

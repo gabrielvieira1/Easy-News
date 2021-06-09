@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  background-color: #0085ff;
+  background-color: #b0b7ff;
   width: 100%;
   display: flex;
   position: fixed;
@@ -20,14 +20,20 @@ export const MapButton = styled.a`
 `;
 
 export const AddNews = styled.button`
-  background-color: #ff533b;
+  background-color: #020f83b0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-style: normal;
   border-radius: 2.5em;
   padding: 9px;
   color: white;
   margin-left: 1em;
+  border-style: none;
   cursor: pointer;
+  outline: none;
+  &:hover {
+    transition: 0.9s;
+    background-color:  #020f83 !important;
+  }
 `;
 
 export const UserIcon = styled.img`
