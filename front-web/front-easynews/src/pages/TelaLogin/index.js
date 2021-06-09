@@ -28,14 +28,13 @@ import {
   P,
 } from "./styles";
 
-export default class TelaLogin extends React.Component{
-
-  constructor(props){
-    super(props)
+export default class TelaLogin extends React.Component {
+  constructor(props) {
+    super(props);
 
     this.state = {
       email: "",
-      password: ""
+      password: "",
     };
 
     this.changeHandler = this.changeHandler.bind(this);
@@ -50,30 +49,32 @@ export default class TelaLogin extends React.Component{
     let formValid = true;
     let login = this.state;
 
-    if(login.email == null || login.email == ""){
-      formValid = false
+    if (login.email == null || login.email == "") {
+      formValid = false;
     }
 
-    if(login.password == null || login.password == ""){
-      formValid = false
+    if (login.password == null || login.password == "") {
+      formValid = false;
     }
-    
-    if(formValid){
+
+    if (formValid) {
       logarUsuario(this.state);
     } else {
-      console.log("Error")
+      console.log("Error");
     }
   };
 
-  render(){
+  render() {
     return (
       <Container>
         <Main>
           <Left>
-            <Image src={LogoBlue} alt="logo" width="653" />
+            <a href="/">
+              <Image src={LogoBlue} alt="logo" width="653" />
+            </a>
             <Image src={phoneGuy} alt="mulher usando mapa" width="650" />
           </Left>
-  
+
           <Right>
             <Top>
               <Icons>
@@ -104,12 +105,11 @@ export default class TelaLogin extends React.Component{
                   onBlur={this.changeHandler}
                 />
               </FieldsetEmail>
-              <LinkCadastro onClick={this.submitHandler} >Entrar</LinkCadastro>
+              <LinkCadastro onClick={this.submitHandler}>Entrar</LinkCadastro>
             </Form>
           </Right>
         </Main>
       </Container>
     );
   }
-
 }

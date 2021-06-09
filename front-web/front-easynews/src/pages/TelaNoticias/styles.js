@@ -12,8 +12,8 @@ export const Body = styled.div`
 `;
 
 export const Card = styled.div`
-  display: grid;
-  grid-template-rows: 1fr 50px;
+  display: flex;
+  flex-direction: column ;
   margin: 1em;
   height: 200px;
   width: 450px;
@@ -26,7 +26,7 @@ export const Card = styled.div`
 export const Text = styled.text`
 margin-top: 10px;
   color: black;
-  font-weight: bold;  
+  font-weight: normal;  
 `;
 
 export const Badge = styled.a`
@@ -42,3 +42,12 @@ export const Badges = styled.div`
   justify-content: flex-start;
   display: flex;
 `;
+
+export const Title = styled.p`
+margin-top: 20px;
+  color: black;
+  font-weight: bolder;  
+  height: auto;
+  width: auto;
+`;
+

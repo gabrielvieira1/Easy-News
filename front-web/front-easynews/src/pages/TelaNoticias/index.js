@@ -1,12 +1,11 @@
 import React from "react";
-import { Body, Card, Text, Badge, Badges } from "./styles";
+import { Body, Card, Text, Title} from "./styles";
 import LogoNoticias from "../../assets/Images/LogoNoticias.png";
 import UserLogo from "../../assets/Images/UserLogo.svg";
 import Modal from "../../Modal/index.js";
 import {
   Header,
   Image,
-  MapButton,
   AddNews,
   UserIcon,
   UserGreeting,
@@ -34,7 +33,9 @@ export default class TelaNoticias extends React.Component {
       <>
         <Header>
           <div style={{ display: "flex", alignItems: "center" }}>
-            <Image src={LogoNoticias} alt="logo" width="150" />
+            <a href="/">
+              <Image src={LogoNoticias} alt="logo" width="150" />
+            </a>
             <Modal show={this.state.show} handleClose={this.hideModal}></Modal>
             <AddNews onClick={this.showModal}>Adicionar notícias</AddNews>
           </div>
@@ -45,160 +46,12 @@ export default class TelaNoticias extends React.Component {
         </Header>
         <Body>
         <Card>
+          <Title>TITULO</Title>
             <Text>
               Em linguística, a noção de texto é ampla e ainda aberta a uma
               definição mais precisa. Grosso modo, pode ser entendido como
               manifestação linguística das ideias de um autor
             </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
-          </Card>
-          <Card>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-            <Badges>
-              <Badge>Protesto</Badge>
-              <Badge>Briga</Badge>
-              <Badge>Gritaria</Badge>
-              <Badge>Dedo no c#</Badge>
-            </Badges>
           </Card>
         </Body>
       </>

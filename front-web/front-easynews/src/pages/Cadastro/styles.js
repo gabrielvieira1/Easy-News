@@ -39,9 +39,10 @@ export const Slogan = styled.h1`
 export const Image = styled.img``;
 
 export const Header = styled.header`
+  width: 900px;
   display: flex;
-  align-items: flex-start;
-  justify-content: right;
+  align-items:center;
+  justify-content: space-between;
   padding-left: 700px;
 `;
 

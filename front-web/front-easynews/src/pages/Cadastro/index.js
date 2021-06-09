@@ -60,7 +60,9 @@ export default class Cadastro extends React.Component {
       <Container>
         <Main>
           <Left>
-            <Image src={logoAmarelo} alt="logo" width="353"/>
+            <a href="/">
+              <Image src={logoAmarelo} alt="logo" width="353" />
+            </a>
             <Slogan>Você está a um passo de definir o seu destino.</Slogan>
             <Image src={mapWoman} alt="mulher usando mapa" width="650" />
           </Left>
@@ -73,10 +75,12 @@ export default class Cadastro extends React.Component {
               </Icons>
               <Header>
                 <P>Já possui conta?</P>
-                <LinkEntrar href="/TelaLogin">ENTRE</LinkEntrar>
+                <LinkEntrar href="/TelaLogin"> ENTRE</LinkEntrar>
               </Header>
               <h1>Inscreva-se no Easy N3ws </h1>
-              <LinkGoogle href="/telanoticias">Cadastre-se com o Google</LinkGoogle>
+              <LinkGoogle href="/telanoticias">
+                Cadastre-se com o Google
+              </LinkGoogle>
             </Top>
             <Form>
               <Fieldset>

@@ -127,6 +127,7 @@ export const Form = styled.form`
   align-items: center;
   width: 600px;
   margin: auto;
+  margin-top: 45px;
 `;
 
 export const Input = styled.input`
