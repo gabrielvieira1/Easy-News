@@ -72,14 +72,15 @@ export const LinkSobre = styled.a`
   }
 `;
 
-export const LinkCadastro = styled.a`
+export const LinkCadastro = styled.button`
   margin-top: 46px;
   width: 326px;
   height: 66px;
   text-decoration: none;
   padding: 3.5px 90px;
   background: #ff2c5f;
-  border: 3px solid #000000;
+  cursor:pointer;
+  border-style: none;
   box-sizing: border-box;
   border-radius: 20px;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -97,7 +98,7 @@ export const LinkCadastro = styled.a`
   }
 `;
 
-export const LinkGoogle = styled.a`
+export const LinkGoogle = styled.button`
   width: 397px;
   height: 45px;
   margin-top: 20px;
@@ -106,13 +107,14 @@ export const LinkGoogle = styled.a`
   font-size: 25px;
   color: #dcdcdc;
   background: #2e64fe;
-  border: 3px solid #000000;
+  cursor:pointer;
+  border-style: none;
   box-sizing: border-box;
   border-radius: 12px;
   display: flex;
   align-items: center;
   text-align: center;
-  padding-left: 80px;
+  padding-left: 60px;
   &:hover {
     transition: 0.6ss;
     background-color: #1c1c1c !important;

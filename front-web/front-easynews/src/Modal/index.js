@@ -1,7 +1,7 @@
 import {
   Div,
   Section,
-  Button,
+  ButtonProblem,
   ButtonClose,
   FieldLocation,
   FieldName,
@@ -21,7 +21,7 @@ const Modal = ({ handleClose, show, children }) => {
         <FieldName type="text" placeholder="Digite um título "/>
         <Label>Digite a descrição</Label>
         <FieldText type="text" placeholder="Digite uma descrição "></FieldText>
-        <Button>Relatar problema</Button>
+        <ButtonProblem onClick={handleClose}>Relatar problema</ButtonProblem>
       </Section>
     </Div>
   );
