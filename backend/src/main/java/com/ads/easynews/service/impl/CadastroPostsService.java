@@ -39,7 +39,7 @@ public class CadastroPostsService implements ICadastroPostsService {
 	public Posts createNew(Posts posts) {
 		validarCampos(posts);
 		
-		cadastrarDependencias(posts);
+//		cadastrarDependencias(posts);
 		return _postsRepository.save(posts);
 	}
 	
@@ -71,14 +71,14 @@ public class CadastroPostsService implements ICadastroPostsService {
 //		if(validarDate.validarData(posts.getDate())) {
 //			throw new CampoDataException(String.format(EasyNewsMessages.MS004, "data"));
 //		}
-		
-		if(posts.getTipoPosts().getCod() != TipoPosts.NOTICE.getProp() && posts.getTipoPosts().getCod() != TipoPosts.EVENT.getProp()) {
-			throw new CamposCadastroVaziosException(String.format(EasyNewsMessages.MS001, "tipo"));
-		}
-		
-		if(posts.getAddress().getLatitude() == null || posts.getAddress().getLongitude() == null) {
-			throw new CamposCadastroVaziosException(String.format(EasyNewsMessages.MS004, "endereço"));
-		}
+//		
+//		if(posts.getTipoPosts().getCod() != TipoPosts.NOTICE.getProp() && posts.getTipoPosts().getCod() != TipoPosts.EVENT.getProp()) {
+//			throw new CamposCadastroVaziosException(String.format(EasyNewsMessages.MS001, "tipo"));
+//		}
+//		
+//		if(posts.getAddress().getLatitude() == null || posts.getAddress().getLongitude() == null) {
+//			throw new CamposCadastroVaziosException(String.format(EasyNewsMessages.MS004, "endereço"));
+//		}
 	}
 	
 	private void cadastrarDependencias(Posts posts) {

@@ -53,7 +53,7 @@ padding: 8px 0 0 10px;
   outline: 0;
 `;
 
-export const FieldName = styled.textarea`
+export const FieldName = styled.input`
 resize: none;
 padding: 8px 0 0 10px;
   border-radius: 12px;

@@ -24,7 +24,7 @@ export const Card = styled.div`
 `;
 
 export const Text = styled.text`
-margin-top: 10px;
+margin-top: 20px;
   color: black;
   font-weight: normal;  
 `;

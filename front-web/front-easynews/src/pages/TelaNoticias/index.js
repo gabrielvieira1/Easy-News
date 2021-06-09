@@ -1,8 +1,9 @@
-import React from "react";
+import React, {Component, useEffect} from "react";
 import { Body, Card, Text, Title} from "./styles";
 import LogoNoticias from "../../assets/Images/LogoNoticias.png";
 import UserLogo from "../../assets/Images/UserLogo.svg";
 import Modal from "../../Modal/index.js";
+import { buscarNoticia } from "../../services/cadastroNoticia";
 import {
   Header,
   Image,
@@ -15,10 +16,18 @@ export default class TelaNoticias extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { show: false };
+    this.state = { noticias:[]};
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
   }
+
+async componentDidMount(){
+  const getNoticias = async() =>{
+    const noticias = await buscarNoticia();
+    this.setState({noticias:noticias})
+  }
+  await getNoticias() 
+}
 
   showModal = () => {
     this.setState({ show: true });
@@ -45,14 +54,11 @@ export default class TelaNoticias extends React.Component {
           </div>
         </Header>
         <Body>
-        <Card>
-          <Title>TITULO</Title>
-            <Text>
-              Em linguística, a noção de texto é ampla e ainda aberta a uma
-              definição mais precisa. Grosso modo, pode ser entendido como
-              manifestação linguística das ideias de um autor
-            </Text>
-          </Card>
+          {this.state.noticias.length > 0 && this.state.noticias.map(noticia=>(
+          <Card>
+          <Title>{noticia.title}</Title>
+            <Text>{noticia.description}</Text>
+          </Card>))}
         </Body>
       </>
     );

@@ -46,7 +46,7 @@ public class CadastroPostsController {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 		
-		return new ResponseEntity<>(news, HttpStatus.FOUND);
+		return new ResponseEntity<>(news, HttpStatus.OK);
 	}
 	
 	@RequestMapping(method = RequestMethod.PUT, path = "/updateNew/{id}")
