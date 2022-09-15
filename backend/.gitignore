@@ -31,3 +31,12 @@ build/
 
 ### VS Code ###
 .vscode/
+..metadata
+.metadata
+.classpath
+.project
+.settings/
+.HELP.md
+/target
+../backend/HELP.md
+.dccache

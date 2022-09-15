@@ -1,5 +1,13 @@
 # Compiled class file
 *.class
+..metadata
+.metadata
+.classpath
+.project
+.settings/
+.HELP.md
+/target
+../backend/HELP.md
 
 # Log file
 *.log

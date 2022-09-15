@@ -14,15 +14,35 @@ import lombok.Setter;
 
 @Entity
 @Table(name = "TipoPosts")
-@NoArgsConstructor
-@AllArgsConstructor
 public class TipoPosts {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Getter private Long id;
+	private Long id;
 	
 	@Column(name = "Description")
-	@Getter @Setter private String description;
+	private String description;
+	
+	@Column(name = "Cod")
+	private int cod;
 
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Long getId() {
+		return id;
+	}
+	
+	public int getCod() {
+		return cod;
+	}
+	
+	public void setCod(int cod) {
+		this.cod = cod;
+	}
 }
