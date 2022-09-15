@@ -39,3 +39,4 @@ build/
 .HELP.md
 /target
 ../backend/HELP.md
+.dccache
