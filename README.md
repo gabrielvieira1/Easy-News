@@ -11,22 +11,6 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gabrielvieira1/easy-news">
   
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gabrielvieira1/easy-news">
-  
-  <a href="https://www.linkedin.com/in/bielvieira/">
-        <img 
-            alt="Gabriel Vieira" 
-            src="https://img.shields.io/badge/-Gabriel%20Vieira-%230077b5?style=flat-square&logo=linkedin">
-    </a>
-    <a href="mailto:gabrielvieira4102@gmail.com">
-        <img 
-            alt="gmail Gabriel Vieia" 
-            src="https://img.shields.io/badge/Gmail-%23c14438?style=flat-square&logo=gmail&logoColor=white">
-    </a>
-    <a href="https://twitter.com/bielvieir4">
-        <img 
-            alt="Twitter Gabriel Vieira" 
-            src="https://img.shields.io/twitter/follow/bielvieir4?label=Seguir&style=social">
-    </a>
 </p>
 <p align="center">
   <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -94,5 +78,3 @@ After merging your receipt request to done, you can delete a branch from yours.
 ## :memo: License
 
 This project is under the MIT license. See the [LICENSE](LICENSE) for details.
-
-Made with ♥ by Gabriel Vieira :wave: [Get in touch!](https://www.linkedin.com/in/bielvieira/)
