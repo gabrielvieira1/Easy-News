@@ -1,4 +1,4 @@
-<h1 align="center"Easy-News</h1>
+<h1 align="center">Easy-News</h1>
 <p align="center">Project carried out during the Systems Analysis and Development course</p>
 
 <p align="center">
@@ -28,7 +28,6 @@
             src="https://img.shields.io/twitter/follow/bielvieir4?label=Seguir&style=social">
     </a>
 </p>
-
 <p align="center">
   <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -48,7 +47,7 @@ API with two methods:</p>
 # 🔖 Layout
 
 <h1 align="center">
-    <img alt="DsDelivery" title="#dsdelivery" src=".github/dsdeliverypc.gif" />
+    <img alt="DsDelivery" title="#dsdelivery" src=".github/easyhome.png" />
 </h1>
 
 # 🛠 Technologies
